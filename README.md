@@ -1,2 +1,2 @@
-# coming_soon
-coming_soon template built using Flat-UI
+# Coming Soon
+coming_soon template for snabar built using Flat-UI
