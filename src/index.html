@@ -15,13 +15,105 @@
 
 <body>
 
-    <div class="container">
-        <div class="centered">
-            <h3><span class="element"></span></h3>
+    <nav>
+        <div class="brand">
+            <span>SnaBar</span>
         </div>
+    </nav>
 
-    </div>
+    <section class="hero">
+        <div class="container">
+            <canvas id='snabarCanvas'></canvas>
+            <div class="coming_content">
+                <h2><span class="element"></span></h2>
+            </div>
+        </div>
+    </section>
+    <section class="features">
+        <div class="container">
+            <div class="row">
+                <center>
+                    <h2>Features</h2>
+                </center>
+                <hr>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../bower_components/flat-ui/dist/img/icons/svg/paper-bag.svg">
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>Shop anything anywhere</p>
+                        </div>
 
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../bower_components/flat-ui/dist/img/icons/svg/retina.svg">
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>The perfect online shopping site</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-image">
+                            <img src="../bower_components/flat-ui/dist/img/icons/svg/map.svg">
+                        </div>
+                        <hr>
+                        <div class="card-content">
+                            <p>Get product at your place with in a day</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript">
+        (function () {
+            var canvas = document.getElementById('snabarCanvas');
+            var ctx = canvas.getContext('2d');
+            var particles = [];
+            var particleCount = 280;
+
+            for (var i = 0; i < particleCount; i++) {
+                particles.push(new particle());
+            }
+
+            function particle() {
+                this.x = Math.random() * canvas.width;
+                this.y = canvas.height + Math.random() * 300;
+                this.speed = 1 + Math.random();
+                this.radius = Math.random() * 3;
+                this.opacity = (Math.random() * 100) / 1000;
+            }
+
+            function loop() {
+                requestAnimationFrame(loop);
+                draw();
+            }
+
+            function draw() {
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                ctx.globalCompositeOperation = 'lighter';
+                for (var i = 0; i < particles.length; i++) {
+                    var p = particles[i];
+                    ctx.beginPath();
+                    ctx.fillStyle = 'rgba(255,255,255,' + p.opacity + ')';
+                    ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2, false);
+                    ctx.fill();
+                    p.y -= p.speed;
+                    if (p.y <= -10)
+                        particles[i] = new particle();
+                }
+            }
+            loop();
+        })();
+    </script>
 
     <!--SCRIPTS-->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
@@ -32,7 +124,7 @@
     <script>
         $(function () {
             $(".element").typed({
-                strings: ["Something awsome coming..", "", "Stay tuned.."],
+                strings: ["Something awesome is coming..", "Stay tuned.."],
                 typeSpeed: 100,
                 loop: true
             });
