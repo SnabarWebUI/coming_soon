@@ -45,45 +45,14 @@
     }
 }
 
+
 /*
 ---typed.js css end
 */
 
 .lighter {
-  font-weight: lighter;
+    font-weight: lighter;
 }
-
-.brand {
-    margin: 28px 20px 20px 20px;
-    float: left;
-    font-weight: bold;
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    text-transform: uppercase;
-    font-size: 15px;
-    letter-spacing: 1px;
-    float: left !important;
-    color: #fff;
-    z-index: 10;
-    position: relative;
-}
-
-.brand > span {
-    display: -moz-inline-stack;
-    display: inline-block;
-    zoom: 1;
-    *display: inline;
-    float: left;
-    border: 3px solid #fff;
-    padding: 7px 10px 7px 12px;
-}
-
-
-/*---------
-    Hero animation
-----------*/
 
 body,
 html {
@@ -95,7 +64,6 @@ html {
     height: 100%;
 }
 
-
 .hero {
     position: relative;
     width: 100%;
@@ -103,9 +71,8 @@ html {
     background-repeat: no-repeat;
     background-size: cover;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8  ) ), url('images/shopping.png'); ! important
-/*    background: -webkit-radial-gradient(circle, #fbb600, #da5900);
-    background: radial-gradient(circle, #009688, #0097A7);*/
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/shopping.png');
+    ! important
 }
 
 .features {
