@@ -8,7 +8,6 @@
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-
 @keyframes blink {
     0% {
         opacity: 1;
@@ -20,7 +19,6 @@
         opacity: 1;
     }
 }
-
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
@@ -32,7 +30,6 @@
         opacity: 1;
     }
 }
-
 @-moz-keyframes blink {
     0% {
         opacity: 1;
@@ -44,8 +41,6 @@
         opacity: 1;
     }
 }
-
-
 /*
 ---typed.js css end
 */
@@ -78,7 +73,7 @@ body {
     color: beige;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 420px) {
     .coming_content{
         margin-top: 50%;
     }
@@ -91,4 +86,10 @@ body {
     .form-control{
         width: 20%;
     }
+}
+@media only screen and (max-width: 800px) {
+
+}
+@media only screen and (max-width: 1200px) {
+
 }
