@@ -54,15 +54,6 @@
     font-weight: lighter;
 }
 
-/*body {
-    text-align: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url('images/shopping.png'),linear-gradient(to bottom right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
-}
-*/
-
-
 body {
     background: none;
 }
