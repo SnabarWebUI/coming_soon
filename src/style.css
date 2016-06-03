@@ -45,25 +45,80 @@
     }
 }
 
-
 /*
 ---typed.js css end
 */
 
 .lighter {
-    font-weight: lighter;
+  font-weight: lighter;
 }
 
+.brand {
+    margin: 28px 20px 20px 20px;
+    float: left;
+    font-weight: bold;
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: 1px;
+    float: left !important;
+    color: #fff;
+    z-index: 10;
+    position: relative;
+}
+
+<<<<<<< HEAD
 body {
     background: none;
+=======
+.brand > span {
+    display: -moz-inline-stack;
+    display: inline-block;
+    zoom: 1;
+    *display: inline;
+    float: left;
+    border: 3px solid #fff;
+    padding: 7px 10px 7px 12px;
 }
 
+
+/*---------
+    Hero animation
+----------*/
+
+body,
+html {
+    display: block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    position: relative;
+    height: 100%;
+>>>>>>> parent of e10d654... Removed unwanted code
+}
+
+
 .hero {
+<<<<<<< HEAD
   background: url('images/shopping.png') no-repeat left top fixed, linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+=======
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8  ) ), url('images/shopping.png'); ! important
+/*    background: -webkit-radial-gradient(circle, #fbb600, #da5900);
+    background: radial-gradient(circle, #009688, #0097A7);*/
+>>>>>>> parent of e10d654... Removed unwanted code
 }
 
 
@@ -89,8 +144,15 @@ body {
     }
 }
 
+<<<<<<< HEAD
 @media only screen and(min-width: 1200){
     .content {
         margin-top: 30%;
     } 
 }
+=======
+.card .card-action a:hover {
+    color: #ffd8a6;
+    text-decoration: none;
+}
+>>>>>>> parent of e10d654... Removed unwanted code
