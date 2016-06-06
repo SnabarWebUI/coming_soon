@@ -8,7 +8,6 @@
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
 }
-
 @keyframes blink {
     0% {
         opacity: 1;
@@ -20,7 +19,6 @@
         opacity: 1;
     }
 }
-
 @-webkit-keyframes blink {
     0% {
         opacity: 1;
@@ -32,7 +30,6 @@
         opacity: 1;
     }
 }
-
 @-moz-keyframes blink {
     0% {
         opacity: 1;
@@ -44,8 +41,6 @@
         opacity: 1;
     }
 }
-
-
 /*
 ---typed.js css end
 */
@@ -59,11 +54,17 @@ body {
 }
 
 .hero {
+<<<<<<< HEAD
   background: url('images/shopping.jpeg') no-repeat left top fixed, linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+=======
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/shopping.jpeg') no-repeat left top fixed;
+    ! important
+>>>>>>> 5c842636eeb99afe8728db66f982328c8c299f56
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+<<<<<<< HEAD
 }
 
 
@@ -71,8 +72,38 @@ body {
     margin-top: 30%;
     text-align: center;
     color: white;
+=======
 }
 
+
+.coming_content {
+    padding-top: 20%;
+    text-align: center;
+    color: white;
+}
+
+.page-footer{
+    color: beige;
+}
+
+@media only screen and (max-width: 420px) {
+    .coming_content{
+        margin-top: 50%;
+    }
+    .coming_content img{
+        width: 20%;
+    }
+    .lighter{
+        font-size: 2.5rem;
+    }    
+    .form-control{
+        width: 20%;
+    }
+>>>>>>> 5c842636eeb99afe8728db66f982328c8c299f56
+}
+@media only screen and (max-width: 800px) {
+
+<<<<<<< HEAD
 .page-footer{
     color: white;
 }
@@ -93,4 +124,9 @@ body {
     .content {
         margin-top: 30%;
     }
+=======
+>>>>>>> 5c842636eeb99afe8728db66f982328c8c299f56
+}
+@media only screen and (max-width: 1200px) {
+
 }
