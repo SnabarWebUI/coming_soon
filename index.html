@@ -45,7 +45,7 @@
           var obj = { email : document.getElementById("email").value}
           document.getElementById("email").value = ''
           $.ajax({
-              url: "http://127.0.0.1:8081/notify_me",
+              url: "http://www.snabar.com:8081/notify_me",
               type:"POST",
               data: JSON.stringify(obj),
               success: function( result ) {
