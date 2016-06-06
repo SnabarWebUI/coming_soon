@@ -45,6 +45,10 @@
 ---typed.js css end
 */
 
+.green {
+  color: #70ffe3;
+}
+
 .lighter {
     font-weight: lighter;
 }
@@ -82,7 +86,7 @@ body {
     }
     .lighter{
         font-size: 2.5rem;
-    }    
+    }
     .form-control{
         width: 20%;
     }

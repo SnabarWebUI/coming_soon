@@ -18,10 +18,10 @@
                 <div class="coming_content">
                     <img src="bower_components/flat-ui/dist/img/icons/svg/paper-bag.svg">
                     <h3 class="lighter"><span>Bringing new way to </span><strong><span class="element"></span></strong></h3>
-                    <h5 class="lighter">Stay Tuned</h5>
+                    <h5 class="lighter green">Coming Soon..</h5>
                     <div class="form-inline">
-                      <span><input type="text" class="form-control" placeholder="Email"></span>
-                      <span><button class="btn btn-danger">Notify me</button></span>
+                      <span><input id="email" type="text" class="form-control" placeholder="Email"></span>
+                      <span><button id="notify" class="btn btn-danger">Notify me</button></span>
                     </div>
                 </div>
             </div>
@@ -40,6 +40,25 @@
                 loop: true
             });
         });
+
+        function makeRequest(){
+          var obj = { email : document.getElementById("email").value}
+          document.getElementById("email").value = ''
+          $.ajax({
+              url: "http://127.0.0.1:8081/notify_me",
+              type:"POST",
+              data: JSON.stringify(obj),
+              success: function( result ) {
+                    document.getElementById("notify").style.visibility = "hidden";
+                    document.getElementById("email").style.visibility = "hidden";
+                }
+              });
+          }
+
+        document.getElementById("notify").addEventListener("click",function(){
+          // request to snabar server and it should add email from email text field
+          makeRequest();
+        })
     </script>
 </body>
 
