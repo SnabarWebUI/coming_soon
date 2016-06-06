@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html>
-
+<html class="hero">
 <head>
     <title>Coming Soon</title>
     <!-- CSS-->
@@ -9,16 +8,13 @@
     <link rel="stylesheet" href="src/style.css">
     <!---->
 </head>
-
 <body>
-    <section class="hero">
-        <div class="container">
-            <canvas id='snabarCanvas'></canvas>
-            <div class="coming_content">
-                <div>
-                      <img src="bower_components/flat-ui/dist/img/icons/svg/paper-bag.svg">
-                </div>
-                <h3 class="lighter"><span>Bringing new way to </span><strong><span class="element"></span></strong></h3>
+   <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="content">
+              <img src="../bower_components/flat-ui/dist/img/icons/svg/paper-bag.svg">
+              <h3 class="lighter"><span>Bringing new way to </span><strong><span class="element"></span></strong></h3>
                 <div class="lighter">
                     <h5 class="lighter">Stay Tuned</h5>
                 </div>
@@ -27,22 +23,25 @@
                   <span><button class="btn btn-danger">Notify me</button></span>
                 </div>
             </div>
+           </div>
         </div>
+    </div>
+    <div class="navbar navbar-fixed-bottom" role="navigation">
+     <section class="page-footer">
+          <center>
+              <span>Copyright ®Snabar 2016-17</span>
+          </center>
     </section>
-    <section class="page-footer">
-      <center>
-          <span>Copyright ®Snabar 2016-17</span>
-      </center>
-    </section>
-    <script src="bower_components/jquery/dist/jquery.min.js"></script>
-    <script src="bower_components/typed.js/dist/typed.min.js"></script>
-    <script src="bower_components/flat-ui/dist/js/vendor/video.js"></script>
-    <script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+    </div>
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="../bower_components/typed.js/dist/typed.min.js"></script>
+    <script src="../bower_components/flat-ui/dist/js/vendor/video.js"></script>
+    <script src="../bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
     <!---->
     <script>
         $(function () {
             $(".element").typed({
-                strings: ["Buy..", "Sale.."],
+                strings: ["Buy..", "Sell.."],
                 typeSpeed: 200,
                 loop: true
             });
