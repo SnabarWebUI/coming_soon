@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <title>Dashboard</title>
     <link rel="stylesheet" href="../bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css">
-    <script type="text/javascript" src="date.js"></script>
     <link rel="stylesheet" href="style.css">
     <script type="text/javascript">
         var xmlhttp = new XMLHttpRequest();
-        var url = "http://snabar:8081/r_users";
+        var url = "http://snabar.com:8081/r_users";
         xmlhttp.onreadystatechange=function() {
             if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
                 createTable(xmlhttp.responseText);
