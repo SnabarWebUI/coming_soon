@@ -1,64 +1,53 @@
-  <!DOCTYPE html>
-  <html class="hero">
-
-  <head>
-      <title>Coming Soon</title>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <!-- CSS-->
-      <link rel="stylesheet" href="bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" type="text/css" href="bower_components/flat-ui/dist/css/flat-ui.min.css">
-      <link rel="stylesheet" href="src/style.css">
-      <link rel="stylesheet" href="bower_components/toastr/toastr.css" media="screen" title="no title" charset="utf-8">
-      <!---->
-  </head>
-
-  <body>
-      <div class="container">
-           <div class="row">
-                 <div class="col-sm-12">
-                  <div class="coming_content">
-                      <img src="bower_components/flat-ui/dist/img/icons/svg/paper-bag.svg">
-                      <h3 class="lighter"><span>Bringing new way to </span><strong><span class="element"></span></strong></h3>
-                      <h5 class="lighter green">Coming Soon..</h5>
-                      <!-- <div id="form" class="form-inline">
-                        <span><input id="email" type="text" class="form-control" placeholder="Email"></span>
-                        <span><button id="notify" class="btn btn-danger">Notify me</button></span>
-                      </div> -->
-
-                      <form class="form-inline">
-  <div class="form-group" align="center">
-    <input type="email" class="form-control" id="exampleInputEmail3" placeholder="Email" style="width:auto; height: auto;">
-  </div>
-  <button type="submit" class="btn btn-danger">Notify Me</button>
-</form>
-            <!-- <form class="form-inline"> -->
-             <!-- <div class="form-group"> -->
-               <!-- <label class="sr-only" for="exampleInputEmail3">Email address</label> -->
-               <!-- <input type="email" class="form-control" id="email" placeholder="Email"> -->
-             <!-- </div> -->
-             <!-- <button type="submit" class="btn btn-danger">Notify Me</button> -->
-           <!-- </form> -->
-                  </div>
-              </div>
-          </div>
-      </div>
-      <script src="bower_components/jquery/dist/jquery.min.js"></script>
-      <script src="bower_components/typed.js/dist/typed.min.js"></script>
-      <script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
-      <script src="bower_components/toastr/toastr.min.js">
-
-      </script>
-      <!---->
-      <script>
-          $(function () {
-              $(".element").typed({
-                  strings: ["Buy..", "Sell.."],
-                  typeSpeed: 200,
-                  loop: true
-              });
-          });
-
-          function makeRequest(){
+<!DOCTYPE html>
+<html class="hero">
+<head>
+    <title>Coming Soon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="bower_components/flat-ui/dist/css/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="bower_components/flat-ui/dist/css/flat-ui.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <!---->
+</head>
+<body>
+   	<div class="container">
+   		<div class="row">
+        	<div class="col-sm-12">
+            	<div class="content" style="margin-top:18%">
+                	<img src="bower_components/flat-ui/dist/img/icons/svg/paper-bag.svg">
+              		<h3 class="lighter"><span>Bringing new way to </span><strong><span class="element"></span></strong></h3>
+              		<div class="lighter">
+                        <h5 class="lighter">Stay Tuned</h5>
+                        <div class="form-inline">
+                            <input type="text" class="radio-inline form-control" style="width:auto" placeholder="Email">
+                            <button class="radio-inline btn btn-danger" >Notify me</button>
+                        </div>
+                	</div>
+            	</div>
+			</div>
+		</div>
+        <div class="navbar navbar-fixed-bottom" role="navigation">
+            <section class="page-footer">
+                <center>
+                	<span>Copyright ®Snabar 2016-17</span>
+                </center>
+            </section>
+        </div>
+    </div>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/typed.js/dist/typed.min.js"></script>
+    <script src="bower_components/flat-ui/dist/js/vendor/video.js"></script>
+    <script src="bower_components/flat-ui/dist/js/flat-ui.min.js"></script>
+    <script>
+        $(function () {
+            $(".element").typed({
+                strings: ["Buy..", "Sell.."],
+                typeSpeed: 200,
+                loop: true
+            });
+        });
+		
+		function makeRequest(){
             var obj = { email : document.getElementById("email").value}
             document.getElementById("email").value = ''
             $.ajax({
@@ -92,7 +81,7 @@
             // request to snabar server and it should add email from email text field
             makeRequest();
           })
-      </script>
-  </body>
+    </script>
+</body>
 
-  </html>
+</html>

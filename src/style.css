@@ -45,10 +45,6 @@
 ---typed.js css end
 */
 
-.green {
-  color: #70ffe3;
-}
-
 .lighter {
     font-weight: lighter;
 }
@@ -58,7 +54,7 @@ body {
 }
 
 .hero {
-   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/shopping.jpeg') no-repeat left top fixed;
+   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../shopping.jpeg') no-repeat left top fixed;
     ! important
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -67,18 +63,24 @@ body {
 }
 
 
-.coming_content {
-    /*padding-top: ;*/
+.content {
+    margin-top: 30%;
     text-align: center;
     color: white;
-    vertical-align: middle;
+}
+
+
+.coming_content {
+    padding-top: 20%;
+    text-align: center;
+    color: white;
 }
 
 .page-footer{
     color: beige;
 }
 
-@media only screen and (min-width: 120px and max-width: 420px) {
+@media only screen and (max-width: 420px) {
     .coming_content{
         margin-top: 50%;
     }
@@ -87,41 +89,33 @@ body {
     }
     .lighter{
         font-size: 2.5rem;
-    }
+    }    
     .form-control{
         width: 20%;
     }
 }
+@media only screen and (max-width: 800px) {
+.page-footer{
+    color: white;
+}
 
-
-@media only screen and (min-width: 420px) {
-    .coming_content{
-        margin-top: 50%;
-    }
-    .coming_content img{
-        width: 20%;
-    }
-    .lighter{
-        font-size: 2.5rem;
-    }
-    .form-control{
-        width: 20%;
+@media only screen and(min-width: 435){
+    .content {
+        margin-top: 70%;
     }
 }
-@media only screen and (min-width: 800px) {
-  .coming_content{
-      margin-top: 50%;
-  }
-  .coming_content img{
-      width: 20%;
-  }
-  .lighter{
-      font-size: 2.5rem;
-  }
-  .form-control{
-      width: 20%;
-  }
+
+@media only screen and(min-width: 800){
+    .content {
+        margin-top: 40%;
+    }
 }
-@media only screen and (min-width: 1200px) {
+
+@media only screen and(min-width: 1200){
+    .content {
+        margin-top: 30%;
+    }
+}
+@media only screen and (max-width: 1200px) {
 
 }
