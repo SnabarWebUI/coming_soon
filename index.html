@@ -19,8 +19,8 @@
               		<div class="lighter">
                         <h5 class="lighter">Stay Tuned</h5>
                         <div class="form-inline">
-                            <input type="text" class="radio-inline form-control" style="width:auto" placeholder="Email">
-                            <button class="radio-inline btn btn-danger" >Notify me</button>
+                            <input type="text" id="email" class="radio-inline form-control" style="width:auto" placeholder="Email">
+                            <button id="notify" class="radio-inline btn btn-danger" >Notify me</button>
                         </div>
                 	</div>
             	</div>
@@ -82,6 +82,7 @@
             makeRequest();
           })
     </script>
+    <script src="bower_components/toastr/toastr.min.js"></script>
+    <link rel="stylesheet" href="bower_components/toastr/toastr.css">
 </body>
-
 </html>
