@@ -19,7 +19,7 @@
               		<h3 class="lighter"><span>Explore new way to </span><strong><span class="element"></span></strong></h3>
               		<div class="lighter">
                         <div>
-                        <p id="p_container" class="animated zoomIn green">Your intuitive bridge between Online and Offline shopping</p>
+                        <h5 id="p_container" class="animated zoomIn green lighter">Your intuitive bridge between Online and Offline shopping</h5>
                         </div>
                         <div class="form-inline">
                             <input type="text" id="email" class="radio-inline form-control" style="width:auto" placeholder="Email">
@@ -42,6 +42,11 @@
                 loop: true
             });
         });
+
+        function validateEmail(email) {
+            var re = /\S+@\S+\.\S+/;
+            return re.test(email);
+        }
 		
 		function makeRequest(){
             var obj = { email : document.getElementById("email").value}
@@ -75,7 +80,13 @@
             }
           document.getElementById("notify").addEventListener("click",function(){
             // request to snabar server and it should add email from email text field
-            makeRequest();
+            var email = document.getElementById("email").value;
+            if (validateEmail(email)) {
+                makeRequest();
+            }else{
+                alert("Please enter valid email Address")
+                document.getElementById("email").value = ''
+            }
           })
 
     </script>
