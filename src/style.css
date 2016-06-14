@@ -57,6 +57,7 @@ body {
    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('./images/shopping.jpeg') no-repeat left top fixed;
     ! important
   -webkit-background-size: cover;
+    height: 100%;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
@@ -80,6 +81,25 @@ body {
     color: beige;
 }
 
+.hidden {
+    visibility: hidden;
+}
+
+#notify {
+    transition: 0.5s ease-in-out;
+}
+
+#notify:hover {
+    opacity: 1;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+
+.green {
+    color: aquamarine;
+}
+
 @media only screen and (max-width: 420px) {
     .coming_content{
         margin-top: 50%;
@@ -93,7 +113,7 @@ body {
     .form-control{
         width: 20%;
     }
-}
+}   ´
 
 @media only screen and (max-width: 800px) {
 .page-footer{
