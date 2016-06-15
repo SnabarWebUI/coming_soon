@@ -14,3 +14,5 @@ then
     docker run --rm --name snabar-coming-soon -p 80:80 -d snabar/coming-soon
     echo "$(tput setaf 1)Starting new Docker image $(tput sgr0)"
 fi
+
+echo "$(tput setaf 2)Deployed Coming-Soon \n Please visit http://snabar.com $(tput sgr0)"
